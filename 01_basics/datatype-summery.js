@@ -12,7 +12,7 @@ const id = Symbol("123")
 const anotherId = Symbol("123")
 
 const bigNumber = 3245488587637853768536875n
-console.log(typeof bigNumber);
+// console.log(typeof bigNumber);
 
 // Reference (non-premitive)
 // Array,object,Function
@@ -25,6 +25,32 @@ let myObj = {
 }
 
 const myFunction = function(){
-    console.log ("hello world");
+    // console.log ("hello world");
 }
 
+
+
+
+//===================================
+
+// stack (Primitive), 
+// Heap (Non-Primitive)
+
+let myYoutubename = "damaru"
+
+let anothername = myYoutubename
+anothername = "sonu"
+
+// console.log(myYoutubename);
+// console.log(anothername);
+
+let user1 = {
+    email:"user@example.com",
+    upi :"123@upi"
+}
+
+let user2 = user1
+user2.email="user2@pix"
+
+console.log(user1.email);
+console.log(user2.email);
