@@ -32,8 +32,8 @@ switch (month) {
 
 
 
-const month = March 
-switch (month) {
+const monthName = "March"
+switch (monthName) {
     case "January":
         console.log("January");
         break;

@@ -1,0 +1,17 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.tokenColorCustomizations": {
+        "comments": "#FFFFFF",
+        "textMateRules": [
+            {
+                "scope": [
+                    "comment",
+                    "punctuation.definition.comment"
+                ],
+                "settings": {
+                    "foreground": "#FFFFFF"
+                }
+            }
+        ]
+    }
+}
