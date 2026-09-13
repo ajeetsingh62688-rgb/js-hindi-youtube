@@ -1,5 +1,6 @@
 {
     "files.autoSave": "afterDelay",
+    "liveServer.settings.file": "06_dom/four.html",
     "editor.tokenColorCustomizations": {
         "comments": "#FFFFFF",
         "textMateRules": [
