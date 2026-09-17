@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Chai aur JavaScript</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+
+    <script>
+      const sayDate = function (str) {
+        console.log(str, Date.now());
+      };
+
+      // 1. Declare the variable globally using 'let' so both buttons can access it
+      let intervalId;
+
+      document.querySelector("#stop").addEventListener("click", function () {
+        // 2. Use clearInterval for an interval
+        clearInterval(intervalId);
+        console.log("STOPPED");
+      });
+
+      document.querySelector("#start").addEventListener("click", function () {
+        // 3. IMPORTANT: Don't use 'const' here.
+        // Assign the interval to the global variable we created above.
+        intervalId = setInterval(sayDate, 1000, "hi");
+        console.log("STARTED");
+      });
+    </script>
+  </body>
+</html>
